@@ -1,0 +1,5 @@
+py_binary(
+    name = "app",
+    srcs = ["app.py"],
+    deps = ["@pip3//luigi"],
+)

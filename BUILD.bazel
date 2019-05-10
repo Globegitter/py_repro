@@ -1,0 +1,8 @@
+load("@com_apt_itude_rules_pip//rules:compile.bzl", "compile_pip_requirements")
+
+compile_pip_requirements(
+    name = "pip-compile",
+    requirements_in = "requirements.in",
+    requirements_txt = "requirements.txt",
+    python_interpreter = "python3",
+)
