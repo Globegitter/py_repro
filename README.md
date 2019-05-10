@@ -6,7 +6,7 @@ bazel run //app # works as expected
 bazel run @pip3//luigi:bin-luigi # can not import module luigi for some reason
 ```
 
-To simplify the case one can also execute:
+To simplify the case one can also paste the following code into the external repository and still get the same issue:
 ```sh
 echo "__requires__ = 'luigi==2.8.5'
 import re
